@@ -26,7 +26,7 @@ npx cap sync
 
 
 - iOS:
-  When syncronised, open Pods on your App level, select FreshchatCapacitor on targets list, navigate to Build Phases, find *Link Binary With Libraries* section, and add FreshchatSDK.xcfrmework there;
+  Open XCode, open Pods on your App level, select FreshchatCapacitor on targets list, navigate to Build Phases, find *Link Binary With Libraries* section, and add FreshchatSDK.xcfrmework there;
 
 ## API
 
