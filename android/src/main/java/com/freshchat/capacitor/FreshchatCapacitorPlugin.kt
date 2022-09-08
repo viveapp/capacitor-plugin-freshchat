@@ -123,6 +123,28 @@ class FreshchatCapacitorPlugin : Plugin() {
     }
 
     @PluginMethod
+    fun setPushRegistrationToken(call: PluginCall) {
+        if (call.data.length() == 0) {
+            call.reject("No arguments provided")
+        }
+
+        val deviceToken = call.getString("deviceToken")
+
+        if (deviceToken.isNullOrEmpty()) {
+            call.reject("deviceToken cannot be empty")
+            return
+        }
+
+        try {
+            Freshchat.getInstance(context).setPushRegistrationToken(deviceToken)
+
+            call.resolve()
+        } catch (e: Exception) {
+            call.reject("Exception occurred", e)
+        }
+    }
+
+    @PluginMethod
     fun getRestoreId(call: PluginCall) {
         if (call.data.length() == 0) {
             call.reject("No arguments provided")

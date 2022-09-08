@@ -2,7 +2,9 @@ import { WebPlugin } from '@capacitor/core';
 
 import type {
   FreshchatCapacitorPlugin,
+  IdentifyUserOptions,
   InitOptions,
+  SetPushRegistrationTokenOptions,
   UpdateUserOptions,
 } from './definitions';
 
@@ -23,6 +25,18 @@ export class FreshchatCapacitorWeb
   }
 
   async updateUserProperties(options: Object): Promise<void> {
+    console.log(options);
+  }
+
+  async resetUser(): Promise<void> {
+
+  }
+
+  async identifyUser(options: IdentifyUserOptions): Promise<void> {
+    console.log(options);
+  }
+
+  async setPushRegistrationToken(options: SetPushRegistrationTokenOptions): Promise<void> {
     console.log(options);
   }
 
