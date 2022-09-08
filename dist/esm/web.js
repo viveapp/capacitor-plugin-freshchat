@@ -13,6 +13,14 @@ export class FreshchatCapacitorWeb extends WebPlugin {
     async updateUserProperties(options) {
         console.log(options);
     }
+    async resetUser() {
+    }
+    async identifyUser(options) {
+        console.log(options);
+    }
+    async setPushRegistrationToken(options) {
+        console.log(options);
+    }
     async showConversations() {
     }
     async showFAQs() {

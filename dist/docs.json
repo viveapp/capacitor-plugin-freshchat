@@ -60,6 +60,52 @@
         "slug": "updateuserproperties"
       },
       {
+        "name": "resetUser",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "resetuser"
+      },
+      {
+        "name": "identifyUser",
+        "signature": "(options: IdentifyUserOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "IdentifyUserOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "IdentifyUserOptions"
+        ],
+        "slug": "identifyuser"
+      },
+      {
+        "name": "setPushRegistrationToken",
+        "signature": "(options: SetPushRegistrationTokenOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetPushRegistrationTokenOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "SetPushRegistrationTokenOptions"
+        ],
+        "slug": "setpushregistrationtoken"
+      },
+      {
         "name": "showConversations",
         "signature": "() => Promise<void>",
         "parameters": [],
@@ -406,6 +452,45 @@
             "Function"
           ],
           "type": "Function"
+        }
+      ]
+    },
+    {
+      "name": "IdentifyUserOptions",
+      "slug": "identifyuseroptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "externalId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "restoreId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "SetPushRegistrationTokenOptions",
+      "slug": "setpushregistrationtokenoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "deviceToken",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
         }
       ]
     }
