@@ -10,4 +10,5 @@ const FreshchatCapacitor = registerPlugin<FreshchatCapacitorPlugin>(
 );
 
 export * from './definitions';
+export * from './helpers';
 export { FreshchatCapacitor };

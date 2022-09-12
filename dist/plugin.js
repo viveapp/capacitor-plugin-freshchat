@@ -1,6 +1,15 @@
 var capacitorFreshchatCapacitor = (function (exports, core) {
     'use strict';
 
+    function isFreshchatNotification(notification) {
+        if (notification.data &&
+            notification.data.source &&
+            notification.data.source === 'freshchat_user') {
+            return true;
+        }
+        return false;
+    }
+
     const FreshchatCapacitor = core.registerPlugin('FreshchatCapacitor', {
         web: () => Promise.resolve().then(function () { return web; }).then(m => new m.FreshchatCapacitorWeb()),
     });
@@ -39,6 +48,7 @@ var capacitorFreshchatCapacitor = (function (exports, core) {
     });
 
     exports.FreshchatCapacitor = FreshchatCapacitor;
+    exports.isFreshchatNotification = isFreshchatNotification;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
