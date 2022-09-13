@@ -7,6 +7,9 @@ Only implemented the following methods:
 - `init`
 - `updateUser`
 - `updateUserProperties`
+- `resetUser`
+- `identifyUser`
+- `setPushRegistrationToken`
 - `showConversations`
 - `showFAQs`
 
@@ -35,6 +38,9 @@ npx cap sync
 * [`initialize(...)`](#initialize)
 * [`updateUser(...)`](#updateuser)
 * [`updateUserProperties(...)`](#updateuserproperties)
+* [`resetUser()`](#resetuser)
+* [`identifyUser(...)`](#identifyuser)
+* [`setPushRegistrationToken(...)`](#setpushregistrationtoken)
 * [`showConversations()`](#showconversations)
 * [`showFAQs()`](#showfaqs)
 * [Interfaces](#interfaces)
@@ -80,6 +86,41 @@ updateUserProperties(options: Object) => Promise<void>
 | Param         | Type                                      |
 | ------------- | ----------------------------------------- |
 | **`options`** | <code><a href="#object">Object</a></code> |
+
+--------------------
+
+
+### resetUser()
+
+```typescript
+resetUser() => Promise<void>
+```
+
+--------------------
+
+
+### identifyUser(...)
+
+```typescript
+identifyUser(options: IdentifyUserOptions) => Promise<void>
+```
+
+| Param         | Type                                                                |
+| ------------- | ------------------------------------------------------------------- |
+| **`options`** | <code><a href="#identifyuseroptions">IdentifyUserOptions</a></code> |
+
+--------------------
+
+
+### setPushRegistrationToken(...)
+
+```typescript
+setPushRegistrationToken(options: SetPushRegistrationTokenOptions) => Promise<void>
+```
+
+| Param         | Type                                                                                        |
+| ------------- | ------------------------------------------------------------------------------------------- |
+| **`options`** | <code><a href="#setpushregistrationtokenoptions">SetPushRegistrationTokenOptions</a></code> |
 
 --------------------
 
@@ -158,6 +199,21 @@ Creates a new function.
 | **call**     | (this: <a href="#function">Function</a>, thisArg: any, ...argArray: any[]) =&gt; any | Calls a method of an object, substituting another object for the current object.                                                                                                                                         |
 | **bind**     | (this: <a href="#function">Function</a>, thisArg: any, ...argArray: any[]) =&gt; any | For a given function, creates a bound function that has the same body as the original function. The this object of the bound function is associated with the specified object, and has the specified initial parameters. |
 | **toString** | () =&gt; string                                                                      | Returns a string representation of a function.                                                                                                                                                                           |
+
+
+#### IdentifyUserOptions
+
+| Prop             | Type                |
+| ---------------- | ------------------- |
+| **`externalId`** | <code>string</code> |
+| **`restoreId`**  | <code>string</code> |
+
+
+#### SetPushRegistrationTokenOptions
+
+| Prop              | Type                |
+| ----------------- | ------------------- |
+| **`deviceToken`** | <code>string</code> |
 
 
 ### Type Aliases

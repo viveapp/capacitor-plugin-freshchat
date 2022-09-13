@@ -8,6 +8,9 @@ CAP_PLUGIN(FreshchatCapacitorPlugin, "FreshchatCapacitor",
            CAP_PLUGIN_METHOD(initialize, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(updateUser, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(updateUserProperties, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(resetUser, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(identifyUser, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(setPushRegistrationToken, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(showConversations, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(showFAQs, CAPPluginReturnPromise);
 )
