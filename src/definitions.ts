@@ -1,9 +1,12 @@
 export interface FreshchatCapacitorPlugin {
+  /**
+   * Initialize the Freshchat SDK
+   */
   initialize(options: InitOptions): Promise<void>;
 
   updateUser(options: UpdateUserOptions): Promise<void>;
 
-  updateUserProperties(options: Object): Promise<void>;
+  updateUserProperties(options: Record<string, unknown>): Promise<void>;
 
   showConversations(): Promise<void>;
 
