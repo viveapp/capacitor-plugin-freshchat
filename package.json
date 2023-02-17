@@ -1,6 +1,6 @@
 {
   "name": "freshchat-capacitor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Integrates Freshchat with your Capacitor App",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
