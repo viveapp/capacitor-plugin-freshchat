@@ -1,6 +1,6 @@
 {
   "name": "freshchat-capacitor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Integrates Freshchat with your Capacitor App",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -44,11 +44,11 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/android": "^5.0.0",
-    "@capacitor/cli": "^5.0.0",
-    "@capacitor/core": "^5.0.0",
+    "@capacitor/android": "^6.2.1",
+    "@capacitor/cli": "^6.2.1",
+    "@capacitor/core": "^6.2.1",
     "@capacitor/docgen": "^0.2.1",
-    "@capacitor/ios": "^5.0.0",
+    "@capacitor/ios": "^6.2.1",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^2.1.2",
     "@ionic/swiftlint-config": "^1.1.2",
